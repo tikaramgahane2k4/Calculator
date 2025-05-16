@@ -10,6 +10,11 @@ def divide(x,y):
     if y == 0:
         return "Cannot divide by zero"
     return x / y
+def divide1(x ,y):
+    if x % y != 0:
+        return x // y
+
+
 
 print("Select operator:")
 print("1.Addition")
@@ -38,7 +43,10 @@ elif choice == 3:
     print("Result:",multiply(num1,num2))
 
 elif choice == 4:
-    print("Result:",divide(num1,num2))
+    print("Result:", divide(num1,num2))
+
+elif choice == 4:
+    print("Result:", divide1(num1,num2))
 
 elif choice == 5:
     print()
